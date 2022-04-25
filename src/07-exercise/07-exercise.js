@@ -1,16 +1,17 @@
 function exercise07() {
   let users = [
     {
-      name: "alex",
+      name: 'alex',
       age: 24,
     },
     {
-      name: "ana",
+      name: 'ana',
       age: 34,
     },
   ];
 
-  // Complete the code of the function
+  users = JSON.stringify(users);
+  localStorage.setItem('ex-07-users', users);
 }
 
 export default exercise07;
